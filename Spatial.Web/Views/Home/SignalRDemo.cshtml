@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "SignalRDemo";
+}
+
+<h2>SignalR Demo</h2>
+
+<div ng-controller="ChatCtrl">
+    <h1>{{Message}}</h1>
+    <input type="text" placeholder="Message" ng-model="Message"/> 
+    <button type="button" ng-click="sendMessage()">Send Message</button>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.1.0.min.js"></script>
+    <script src="~/SignalR/hubs"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/SignalR/srDemo.js"></script>
+}
+

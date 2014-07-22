@@ -27,5 +27,10 @@ namespace Spatial.Web.Controllers
 
             return View();
         }
+
+        public ActionResult SignalRDemo()
+        {
+            return View();
+        }
     }
 }

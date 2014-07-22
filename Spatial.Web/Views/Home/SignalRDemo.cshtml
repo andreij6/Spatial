@@ -6,9 +6,12 @@
 <h2>SignalR Demo</h2>
 
 <div ng-controller="ChatCtrl">
-    <h1>{{Message}}</h1>
     <input type="text" placeholder="Message" ng-model="Message"/> 
     <button type="button" ng-click="sendMessage()">Send Message</button>
+
+    <ul ng-repeat="message in Messages">
+        <li>{{message}}</li>
+    </ul>
 </div>
 
 @section scripts {
